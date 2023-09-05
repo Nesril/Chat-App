@@ -1,0 +1,102 @@
+.header-myaccount{
+    display: flex;
+}
+.all-bars{
+    margin-top: 50px;
+}
+.leftSideBar{
+    overflow: hidden;
+    margin: 20px 0 10px 0;
+}
+.leftSideBar button{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.profile-home-nav a{
+    color: white;
+    padding-left: 10px;
+}
+.ProfilePictue{
+    height: 200px;
+    color: white;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 40px;
+}
+.defaultProfilePictue{
+    background-color: rgba(2, 42, 75, 0.993);
+    font-size: 50px;
+    text-align: center;
+    padding-top:60px ;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    transition: 1s;
+    animation: changeBack 10s linear infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+@keyframes changeBack{
+    0%   {background:linear-gradient(to bottom left,rgba(2, 42, 75, 0.993),rgba(5, 64, 112, 0.993))}
+    25%  {background-color: rgba(23, 50, 71, 0.993)}
+    50%  {background-color: rgba(2, 42, 75, 0.993)}
+    100% {background-color: rgba(5, 61, 134, 0.575)}
+}
+.profileCameraIcon1{
+    font-size: 30px;
+    position: relative;
+    top: 206px;
+    left: 60px;
+    color: black;
+    z-index: 1;
+    box-shadow: 2px 2px 10px white;
+    color: rgb(143, 143, 187);
+    z-index: 1;
+}
+.profileCameraIcon2{
+    font-size: 30px;
+    position: relative;
+    top: 236px;
+    left: -40px;
+    color: black;
+    z-index: 1;
+    box-shadow: 2px 2px 10px white;
+    color: rgb(43, 43, 161);
+    z-index: 3;
+    cursor: pointer;
+}
+.file-input{
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    top: 230px;                                                       
+    left: 0px;
+    z-index: 2;
+    cursor: pointer;
+     opacity: 0;
+}
+
+.profile-picture-circulaarProgress{
+ position: relative;
+ top: -110px;
+ z-index: 3;
+  margin-left: 46%;
+}
+.successfulText{
+    margin-top: 35px;
+    margin-bottom: -20px;
+    color: black;
+}
+.all-contents-profile{
+margin-bottom: 50px;
+margin-top: -20px;
+}
+.profile-title{
+    font-size: 90px;
+}
+.profile-description{
+    font-size: 40px;
+}

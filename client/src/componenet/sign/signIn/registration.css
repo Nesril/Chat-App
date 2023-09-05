@@ -1,0 +1,96 @@
+.signin-App{
+  height: 100vh;
+  transition: 0.5s;
+  overflow: hidden;
+  background: linear-gradient(to top left,black,black,rgb(117, 25, 25),rgb(48, 6, 6));
+
+}
+.signin-App-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rightSide{
+  padding: 20px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.267);
+  width: 50%;
+}
+
+Form{
+  width: 100%;
+  padding: 0;
+}
+
+.rightSide img{
+  width: 200px;
+  height: 200px;
+}
+.rightSideLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightSide-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rightSideLogo img{
+  border-radius: 100px;
+  transition: 1s;
+}
+.forget-remember{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 1px;
+  
+}
+
+.rightSideLogo img:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.94)}
+
+.items{
+  width: 80%;
+  margin-left: 8%;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.items .image img{
+  width: 400px;
+  transition: 0.5s;
+  height: 350px;
+  border-radius: 20px;
+}
+.items .image img:hover{
+ box-shadow: 2px 2px 10px black;
+ transform: scale(1.06);
+}
+.items .title{
+  color: white;
+}
+.text{
+ padding: 0 10% 0 10%;
+ letter-spacing: 2px;
+ color: rgb(143, 172, 199);
+
+}
+
+.rightSide input{
+    height: 40px;
+    border-radius: 50px;
+    width: 100%
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.rightSide .rightSideTitle{
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Roboto', sans-serif;}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  
+ 

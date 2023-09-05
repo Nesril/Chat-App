@@ -1,0 +1,83 @@
+.pageNotFound{
+    text-align: center;
+}
+.pageNotFound img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+}
+.TypePage .pageNotFound-image-blur{ 
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.359);
+}
+.TypePage img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0px;
+    left: 0;
+
+}
+.pageNotFound-image-blur{
+   z-index: 5;
+   position: fixed;
+   top: 65px;
+   left: 0;
+   width: 100%;
+   height: 90vh;
+   background-color: rgba(0, 0, 0, 0.359);
+}
+.pageNotFound-textPartAnd404{
+    position: fixed;
+    top: 270px;
+    left:35%;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.fourFourtyFour{
+    font-size: 100px;
+    font-weight: 600;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+.pageNotFound-textPArt{
+    font-size: 20px;
+    font-family: 'Alkatra', cursive;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 0;
+}
+.pageNotFound-arrowLink{
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.pageNotFound-buttons{
+    display: flex;
+    align-items: center;
+}
+.pageNotFound-arrowLink:hover{
+    transform: translateX(20px);
+}
+@media(max-width:800px){
+    .pageNotFound-textPartAnd404{
+       position: fixed;
+       left: 20%;
+    }
+    .fourFourtyFour{
+        font-size: 50px;
+    }
+   
+}

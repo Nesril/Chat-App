@@ -1,0 +1,916 @@
+.settingPage{
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.rightSideOf-settingPage{
+    background-color: rgb(82, 145, 218);
+    width: 20%;
+   max-width: 180px;
+ transition: 0.5s;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: fixed;
+ height: 100vh;
+ gap: 10px;
+ padding-top: 0;
+ transition: 0.5s;
+ overflow: hidden;
+ z-index: 2;
+ 
+}
+.darkedSettingPage{
+    background:rgb(97, 24, 24);
+    width: 20%;
+    color: white;
+}
+.minimizedSettingPage{
+    width: 100px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+.rightSideOf-settingPage-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Amita', cursive;
+    transition: 0.5s;
+}
+.min-rightSideOf-settingPage-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;transition: 0.5s;
+    flex-direction: column;
+}
+.rightSideOf-settingPage-head img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.rightSideOf-settingPage-head img:hover{
+    transform: scale(1.08);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+
+.rightSideOf-settingPage-list{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.rightSideOf-settingPage-list a{
+    color: black;
+    font-size: 16px;
+}
+.darkedSettingPage .rightSideOf-settingPage-list a{
+    color: white;
+}
+.rightSideOf-settingPage-list a:hover{
+    color: black;
+}
+.rightSideOf-settingPage-list div{
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 10px;
+
+}
+.rightSideOf-settingPage-list-name:hover{
+   
+}
+.rightSideOf-settingPage-list div:hover{
+    transform: scale(1.1);
+    border-radius: 100px;
+}
+@keyframes listedDiv{
+    0%{padding-left: 5px;}
+    25%{padding-left: 10px;}
+    50%{padding-left: 15px;}
+    100%{padding-left: 20px;}
+}
+#keyArrowButton{
+    background-color: rgb(128, 171, 235,0.3);
+    border-radius: 100px;
+}
+.normal{
+    transition: 1.5s;
+    font-size: 20px;
+    color: rgb(68, 7, 7);
+    font-weight: 800;
+}
+.toRight{
+transform: rotateZ(0deg);
+}
+.toLeft{
+    transform: rotateZ(180deg);
+    
+}
+.leftSideOf-settingPage{
+   width: 80%;
+   position: relative;
+   left: 20%;
+}
+.leftSideOf-settingPage-inside{
+    background-color: rgba(208, 213, 218, 0.267);
+    width: 100%;
+    transition: 0.5s;
+    position: relative;
+    top: 30px;
+    margin-bottom: 200px;
+    min-height: 100vh;
+    gap: 10px;
+    padding-top: 0;
+    overflow: visible;
+    transition: 0.5s;
+    z-index: 2;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.min-leftSideOf-settingPage-inside{
+    position: relative;
+    width: 100%;
+}
+/**
+@media(max-width:1200px){
+    .min-leftSideOf-settingPage-inside{
+        position: relative;
+        left: 250px;  
+        width: 75%;
+    }
+
+}
+@media(max-width:1100px){
+    .min-leftSideOf-settingPage-inside{
+        position: relative;
+        left: 230px;  
+        width: 72%;
+    }
+
+}
+@media(max-width:1000px){
+    .leftSideOf-settingPage-inside{
+        width: 80%;
+      margin-left: 10px;
+      
+    }
+    .min-leftSideOf-settingPage-inside{
+        position: relative;
+        left: 200px;  
+        width: 73%;
+    }
+
+}
+
+@media(max-width:800px){
+    .leftSideOf-settingPage-inside{
+        width: 78%;
+      margin-left: -5px;
+      
+    }
+    .min-leftSideOf-settingPage-inside{
+        width: 60%;
+       
+    }
+   
+  
+}
+
+@media(max-width:660px){
+    .leftSideOf-settingPage-inside{
+        width: 72%;
+       
+    }
+    .min-leftSideOf-settingPage-inside{
+        width: 60%;
+       
+    }
+   
+}*/
+.form{
+padding: 0 50% 0 10%;
+}
+.form-componrnt{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.makeSure{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 100vh;
+
+}
+.makeSure-makeCenter{
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+}
+.makeSure-makeCenter-icon{
+    text-align: end;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+.makeSure-makeCenter-icon button{
+background-color: rgb(153, 30, 30);
+color: white;
+}
+.makeSure-button{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.error{
+    color: red;
+}
+.editCoverProfilePic_coverPic{
+    width: 100%;
+}
+
+.editCoverProfilePic_coverPic img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.editCoverProfilePic_proPic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+   position: relative;
+   top: -80px;    
+   cursor: pointer;
+   object-fit: cover;
+}
+.profile-title{
+    padding: 20px 0 20px 0;
+}
+.profile-description{
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+.editCoverProfilePic-doneButton{
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.editCoverProfilePic-doneButton button{
+    background-color: rgba(120, 120, 202, 0.616);
+    border: none;
+}
+.editCoverProfilePic-UpdateCoveProfile{
+    margin-top: -120px;
+    text-align: end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.coverPicCameraIcon{
+color: white;
+}
+.coverPicCameraIcon-button{
+    width:25px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 200px;
+    background-color: rgb(4, 118, 153);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 2px 2px 10px rgb(4, 118, 153);
+    cursor: pointer;
+}
+.editCoverProfilePic-UpdateCoveProfile #fileInput{
+    visibility: hidden;
+}
+.editCoverProfilePic_proPic-Update{
+    margin-top: -120px;
+    margin-bottom: 90px;
+    width: 10px;
+    margin-left: 300px;
+    padding-left: 20px;
+}
+.editCoverProfilePic_proPic-Update  #fileInput{
+    visibility:hidden;
+}
+
+.profilePicFullScreened{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.881);
+    padding-top: 30px;
+    z-index: 11;
+}
+#profilePicFullScreened-clicked-image{
+    width: 100vh;
+    height: 100vh;
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.profile .form-input-title{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.form-input input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(77, 32, 32);
+}
+
+.saved-post-h2{
+    text-align: center;
+    color:
+}
+.saved-post-pages{
+    margin-left:5%;
+    width: 500px;
+    max-width: 100%;
+}
+@media(max-width:800px){
+    .form-input input{
+        width: 100%;
+    }
+    .form{
+        padding: 0 10% 0 10%;
+        }
+    .saved-post-pages{
+        margin: 0;
+    }
+}
+.no-saved-post{
+    width: 100%;
+    background-image: url(back-image-horse.png);
+    background-position:-280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.no-saved-post-darken{
+    background-color: rgba(0, 0, 0, 0.652);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+.no-saved-post-text{
+    font-family: 'Signika Negative', sans-serif;
+   color:white;
+   font-size: 25px;
+    letter-spacing: 2px;
+}
+.groupOutlineSetting{
+    width: 100%;
+    padding-left: 30px;
+}
+.groupOutlineSetting h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.groupOutline-list{
+    display: flex;
+    margin-bottom: 20px;
+}
+.groupOutline-list img{
+    border-radius: 50px;
+    height: 300px;
+    
+}
+.groupOutline-about{
+    padding-left: 20px;
+    margin-top: 30px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.groupOutline-name{
+    font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.groupOutline-description{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+.groupOutline-area{
+    font-family: 'Domine', serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.groupOutline-members{
+    padding-top: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,800&display=swap');
+.groupOutline-members .no{
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+} 
+.groupOutline-foundedAt{
+    font-size: 15px;
+    padding-top: 25px;
+    opacity: 0.5;
+}
+.memories{
+    overflow: hidden;
+}
+.memories h2{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+.memories-setting{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.memories-list{
+    background-color: rgba(146, 195, 235, 0.347);
+    width: 530px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    height: 330px;
+    display:flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.memories-list-left{
+    width: 50%;
+}
+.memories-list-right{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.memories-list-right-no-image{
+    width: 100%;
+}
+.memories-list-firstImage img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 0px 0 0;
+}
+@media(max-width:800px){
+    .memories-list{
+        width: 430px;
+        min-height: 230px;
+        height: fit-content;
+    }
+}
+@media(max-width:600px){
+    .memories-list{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+        min-height: 200px;
+        height: fit-content;
+    }
+    .memories-list-left{
+        width: 100%;
+    }
+    .memories-list-right{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .memories-list-firstImage img{
+        border-radius: 20px 20px 0 0;
+    }
+    
+}
+.memories-list-otherImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 0;
+    height: 100px;
+    overflow-y: scroll;
+}
+.memories-list-otherImages::-webkit-scrollbar{
+    width: 10px;
+}
+.memories-list-otherImages::-webkit-scrollbar-track{
+   background:transparent;
+}
+.memories-list-otherImages::-webkit-scrollbar-thumb{
+   background-color: rgba(127, 149, 211, 0.459);
+   transition: 0.3s;
+   border-radius: 20px;
+
+}
+.memories-list-otherImages::-webkit-scrollbar-thumb:hover{
+   background-color: rgba(48, 97, 230, 0.459);}
+.memories-list-otherImages img{
+width: 80px;
+height: 60px;
+}
+
+.memories-list-footer{
+    padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+.memories-list-footer-check{
+    text-align: end;
+    font-family: 'Merriweather', serif;
+    font-size: 14px
+}
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+.memories-list-foundedAt{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    font-family: 'Instrument Serif', serif;
+   padding-bottom: 10px;
+}
+.memories-list-footer-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+.memories-list-details button{
+    background-color: rgb(97, 167, 224);
+    border: none;
+    color: rgb(255, 253, 253);
+}
+
+.memories-list-details button:hover{
+    background:none;
+    color: white;
+    border: 2px solid  rgb(97, 167, 224);
+}
+
+.memories-list-description{
+    padding-top: 10px;
+    font-weight: 700;
+    white-space: pre-wrap;
+    display: grid;
+    grid-row-gap: 130px;
+    overflow-wrap: break-word;
+}
+.memories-list-footer-wantToshare{
+    padding-top: 10px;
+}
+.memories-list-footer-Done{
+    text-align: center;
+    padding-top: 5px;
+}
+.memories-list-footer-Done button{
+    background-color:  rgb(97, 167, 224);
+}
+.memories-list-footer-Done button:hover{
+    background:transparent;
+}
+.loadingUser-freind{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.makeSureOption{
+    background-color: rgba(103, 184, 231, 0.966);
+    position: relative;
+    top: -270px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.makeSureOption-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+}
+.makeSureOption-button-yes button{
+ background-color: rgb(23, 76, 119);
+ color: white;
+}
+.makeSureOption-button-yes button:hover{
+    background:transparent;
+    color: white;
+}
+.makeSureOption-button-no button{
+    background-color: rgb(228, 75, 75);
+    color: white;
+   }
+.displayMemoryImageFullScreen{
+    background-color: rgba(40, 70, 99, 1);
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    padding: 30px;
+    padding-left: 0px;
+    z-index: 5;
+    overflow-y:scroll ;
+}
+.displayMemoryImageFullScreen::-webkit-scrollbar{
+    width: 10px;
+}
+.displayMemoryImageFullScreen::-webkit-scrollbar-track{
+   background:transparent;
+}
+.displayMemoryImageFullScreen::-webkit-scrollbar-thumb{
+   background-color: rgba(127, 149, 211, 0.459);
+   transition: 0.3s;
+   border-radius: 20px;
+
+}
+.displayMemoryImageFullScreen::-webkit-scrollbar-thumb:hover{
+   background-color: rgba(48, 97, 230, 0.459);}
+.displayMemoryImageFullScreen-icon{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.displayMemoryImageFullScreen-each{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    color: white;
+}
+.displayMemoryImageFullScreen-leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.displayMemoryImageFullScreen-rightSide{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.displayMemoryImageFullScreen-each footer{
+    padding-top: 20px;
+    opacity: 0.5;
+}
+@media(max-width:800px){
+    .displayMemoryImageFullScreen-each{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.memories-createNew{
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+.memories-createNew-icon{
+    transition: 0.5s ease-in-out;
+
+}
+.memories-createNew-icon button{
+padding: 100px;
+background: transparent;
+padding-bottom: 140px;
+border-color: rgb(16, 216, 173);
+}
+#memoryAddIcon{
+    font-size: 40px; 
+}
+.memories-createNew-ImageTExt form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: rgb(108, 207, 207,0.2);
+    padding-bottom: 15px;
+}
+.memories-createNew-ImageTExt button{
+    background-color:rgb(27, 129, 124);
+    color: white;
+    height: 40px;
+    border: none;
+}
+.memories-createNew-ImageTExt button:hover{
+    color: white;
+    background: transparent;
+    border: 2px solid rgb(27, 129, 124);
+}
+    .RemoveIconToStartAddingMemories{
+    transform: translateX(-200px);
+     width: 0;
+}
+.RemoveIconToStartAddingMemories button{
+     width: 10;
+     padding: 0;
+     height: 0;
+}
+.startCreatingMemories{
+ display: none;
+}
+
+.memories-createNew-text{
+    width: 100%;
+  text-align: center;
+}
+.memories-createNew-text #text-field{
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.memories-createNew-sampleImage{
+    position: relative;
+    left: 5%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.memories-createNewImage .file-input-newPost{
+  visibility: hidden;
+}
+.memories-createNewImage .picButton{
+    font-size: 40px;
+    text-align: center;
+    border: 2px dashed rgb(27, 129, 124);
+    padding: 10px;
+ 
+}
+.nottification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.nottification-settting{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nottification-settting img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.nottification-name{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(206, 6, 72);
+}
+.nottification-note{
+    font-size: 12px;
+}
+
+.following-seting{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+@media(max-width:400px){
+    .following-seting{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.following-seting-imageName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+.following-seting img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    
+}
+.following-seting a{
+    color: black
+}
+.following-seting a:hover{
+    color: black
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.following-seting-userNAme{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+.following-seting-blloName{
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+
+}
+.follow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    padding-right: 40px;
+}
+@media(max-width:700px){
+    .follow{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.followFollowingsetting{
+    text-align:center;
+}
+.follow-seting{
+    margin-bottom: 50px;
+}
+.follow-seting h3{
+    padding-bottom: 15px;
+}
+.accountInformation{
+    padding: 100px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+.accountInformation-title{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-family: 'Merriweather', serif;
+}
+.accountInformation-credential{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.accountInformation-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.accountInformation-user-title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+.accountInformation-founded{
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+.accountInformation-logOutAndDeleteAndFounded{
+    padding-top: 60px;
+    text-align: center;
+   
+}
+.accountInformation-logOutAndDelete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 20%;
+
+}
+.accountInformation-logOutAndDelete button{
+    background-color: rgb(4, 118, 153);
+    color: white;
+    margin-bottom: 20px;
+}
+.accountInformation-logOutAndDelete button:hover{
+    background-color: rgb(4, 118, 153);
+   color: white;
+}
+.update-button{
+    margin-bottom: 15px;
+}

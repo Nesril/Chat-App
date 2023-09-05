@@ -1,0 +1,10 @@
+.main{
+    background-color: rgba(52, 186, 219, 0.181);
+    transition: 1.4s;
+    min-height: 100vh;
+}
+.darkedMain{
+    transition: 1.4s;
+    background:linear-gradient(to bottom left, black,rgb(56, 14, 14));
+    min-height: 100vh;
+}

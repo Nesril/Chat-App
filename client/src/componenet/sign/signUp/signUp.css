@@ -1,0 +1,58 @@
+.signUp{
+    background: linear-gradient(to top left,black,black,rgb(117, 25, 25),rgb(48, 6, 6));
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.rightSideLogo{
+    padding-top: 50px;
+}
+.rightSideLogo img{
+    width: 200px;
+    height: 180px;
+}
+.signUp a{
+    color: white;
+}
+.signUp form label{
+    color: white;
+}
+.signUpChilde{
+    background: rgb(80, 74, 74,0.4);
+    width: 100%;
+    min-height: 100vh;
+    text-align:center;
+    position: relative;
+    color: white;
+}
+.eachInput{
+    display: flex;
+    justify-content:center;
+   flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.eachInput input{
+    height: 30px;
+    width: 300px;
+    background-color: rgb(253, 251, 251);
+}
+.eachInput input::placeholder{
+    color: rgba(0, 0, 0, 0.515);
+}
+@media(max-width:700px){
+    .signUpChilde{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+}
+.enterCodeSignUp{
+    text-align: center;
+}
+.enterCodeSignUp button{
+    background-color: rgba(13, 107, 184, 0.76);
+    padding-bottom: 30px;
+
+}
